@@ -1,0 +1,94 @@
+/* Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    z-index: 10; /* El contenido estará por encima de la imagen */
+    position: relative; /* Asegura que el contenido se mantenga encima de la imagen */
+}
+
+.title {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input {
+    padding: 10px;
+    font-size: 1em;
+    width: 80%;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #444;
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; /* La imagen ocupará toda la pantalla manteniendo su proporción */
+    z-index: 1; /* La imagen estará por encima del fondo pero debajo del contenido */
+}
+
+.oculto {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .input {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+    }
+}

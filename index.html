@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Troleo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">¿Cuánto pesas en kg?</h1>
+        
+        <!-- Input para ingresar el peso -->
+        <input type="number" id="pesoInput" placeholder="Ingresa tu peso en kg" class="input">
+
+        <!-- Botón para enviar el peso -->
+        <button onclick="verificarPeso()" class="btn">Verificar</button>
+
+        <!-- Área de resultados -->
+        <div id="resultado" class="resultado"></div>
+
+        <!-- Imagen y Audio ocultos por defecto -->
+        <img id="imagen" src="images/troleo.jpg" alt="Imagen de Troleo" class="imagen oculto">
+        <audio id="audio" src="audio/sonido.mp3" preload="auto"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
